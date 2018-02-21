@@ -1,2 +1,8 @@
 ---
-# tasks file for haveged-install
+- name: Install haveged package
+  package: name=haveged state=present
+  become: true
+
+- name: Enable haveged service
+  service: name=haveged enabled=yes
+  become: true

@@ -22,6 +22,30 @@
       "revId": "e80898ec9d127a22d3c8f3e1550a518138967570",
       "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9713aa6d_57ad563f",
+        "filename": "defaults/main.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 15
+      },
+      "writtenOn": "2018-07-10T15:23:49Z",
+      "side": 1,
+      "message": "Oh, yes! I must have mistyped that; thanks!",
+      "parentUuid": "b87207aa_ee165909",
+      "range": {
+        "startLine": 2,
+        "startChar": 24,
+        "endLine": 2,
+        "endChar": 29
+      },
+      "revId": "e80898ec9d127a22d3c8f3e1550a518138967570",
+      "serverId": "f2a2391d-0403-4fa5-b183-4056999a8a09",
+      "unresolved": false
     }
   ]
 }

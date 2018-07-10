@@ -1,2 +1,2 @@
 ---
-# defaults file for haveged-install
+haveged_service_enable: true

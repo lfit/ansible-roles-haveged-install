@@ -1,8 +1,13 @@
 ---
+- name: Install Epel Repo
+  package: name=epel-release state=present
+  when: ansible_os_family == "RedHat"
+
 - name: Install haveged package
   package: name=haveged state=present
   become: true
 
 - name: Enable haveged service
   service: name=haveged enabled=yes
+  when: haveged_service_enable
   become: true

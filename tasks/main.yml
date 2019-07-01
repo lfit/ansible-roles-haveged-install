@@ -9,5 +9,5 @@
 
 - name: Enable haveged service
   service: name=haveged enabled=yes
-  when: haveged_service_enable
+  when: haveged_service_enable | bool
   become: true

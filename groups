@@ -1,4 +1,5 @@
 # UUID                                                                                      	Group Name
 #
 d68d00a2419f8ff627fc120cf9dd9055ae422153                                                    	GitHub Replication
+d8fc77a268452d668772f520f3b2e4105d80851e                                                    	saml/lf-gerrit-ansible-roles-haveged-install-committers
 ldap:cn=lf-gerrit-ansible-roles-haveged-install-committers,ou=Groups,dc=freestandards,dc=org	ldap/lf-gerrit-ansible-roles-haveged-install-committers

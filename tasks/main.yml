@@ -8,8 +8,16 @@
   package: name=haveged state=present
   become: true
 
-- name: Enable haveged service
+- name: Enable haveged service (Ubuntu)
+  service:
+    name: haveged
+    enabled: yes
+  become: true
+  when: ansible_distribution == 'Ubuntu'
+
+- name: Enable haveged service (RedHat)
   systemd:
     name: haveged
     enabled: yes
   become: true
+  when: ansible_os_family == "RedHat"

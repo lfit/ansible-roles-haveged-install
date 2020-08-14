@@ -9,6 +9,7 @@
   become: true
 
 - name: Enable haveged service
-  service: name=haveged enabled=yes
-  when: haveged_service_enable | bool
+  systemd:
+    name: haveged
+    enabled: yes
   become: true

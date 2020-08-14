@@ -1,5 +1,10 @@
 ---
 - name: Prepare
   hosts: all
-  gather_facts: false
-  tasks: []
+  gather_facts: true
+  tasks:
+    - name: Update APT cache
+      apt:
+        update_cache: yes
+      when: ansible_distribution == 'Ubuntu'
+      become: true

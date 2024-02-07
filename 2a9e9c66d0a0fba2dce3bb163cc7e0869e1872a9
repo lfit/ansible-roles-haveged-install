@@ -1,0 +1,8 @@
+Code-Review+2: Eric Ball <eball@linuxfoundation.org>
+Verified+1: LFIT Required GHA <releng+lfit-required-gha@linuxfoundation.org>
+Verified+1: Jenkins CI <releng+lf-jenkins@linuxfoundation.org>
+Submitted-by: Eric Ball <eball@linuxfoundation.org>
+Submitted-at: Wed, 07 Feb 2024 00:28:44 +0000
+Reviewed-on: https://gerrit.linuxfoundation.org/infra/c/ansible/roles/haveged-install/+/72619
+Project: ansible/roles/haveged-install
+Branch: refs/heads/master

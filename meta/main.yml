@@ -19,12 +19,12 @@ galaxy_info:
       versions:
         - 7
         - 8
-        - 9
 
     - name: Ubuntu
       versions:
         - bionic
         - focal
+        - jammy
 
   galaxy_tags:
     - system

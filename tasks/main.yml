@@ -1,22 +1,26 @@
 ---
 - name: Install Epel Repo
-  package: name=epel-release state=present
+  ansible.builtin.package:
+    name: epel-release
+    state: present
   when: ansible_os_family == "RedHat"
   become: true
 
 - name: Install haveged package
-  package: name=haveged state=present
+  ansible.builtin.package:
+    name: haveged
+    state: present
   become: true
 
 - name: Enable haveged service (Ubuntu)
-  service:
+  ansible.builtin.service:
     name: haveged
     enabled: yes
   become: true
   when: ansible_distribution == 'Ubuntu'
 
 - name: Enable haveged service (RedHat)
-  systemd:
+  ansible.builtin.systemd:
     name: haveged
     enabled: yes
   become: true

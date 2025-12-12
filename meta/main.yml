@@ -15,16 +15,10 @@ galaxy_info:
   # min_ansible_container_version:
 
   platforms:
-    - name: EL
-      versions:
-        - 7
-        - 8
-
     - name: Ubuntu
       versions:
-        - bionic
-        - focal
         - jammy
+        - noble
 
   galaxy_tags:
     - system

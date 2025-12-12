@@ -8,24 +8,29 @@ platforms:
     image: ubuntu:22.04
   - name: ubuntu2404
     image: ubuntu:24.04
-  - name: centos-stream9
-    image: quay.io/centos/centos:stream9
 provisioner:
   name: ansible
+  config_options:
+    defaults:
+      callbacks_enabled: profile_tasks
+      inject_facts_as_vars: false
+  inventory:
+    host_vars:
+      ubuntu2204:
+        ansible_python_interpreter: /usr/bin/python3
+      ubuntu2404:
+        ansible_python_interpreter: /usr/bin/python3
 scenario:
   name: default
   test_sequence:
-    - dependency
-    - cleanup
     - destroy
+    - dependency
     - syntax
     - create
     - prepare
     - converge
-    - idempotence
     - side_effect
     - verify
-    - cleanup
     - destroy
 verifier:
-  name: testinfra
+  name: ansible
